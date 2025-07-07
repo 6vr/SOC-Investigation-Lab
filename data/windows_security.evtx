@@ -1,0 +1,15 @@
+<Event>
+  <System>
+    <Provider Name="Microsoft-Windows-Security-Auditing" />
+    <EventID>4625</EventID>
+    <Level>2</Level>
+    <Task>12544</Task>
+    <Keywords>0x8020000000000000</Keywords>
+    <TimeCreated SystemTime="2025-07-07T10:12:00Z" />
+  </System>
+  <EventData>
+    <Data Name="TargetUserName">administrator</Data>
+    <Data Name="IpAddress">192.168.1.100</Data>
+    <Data Name="FailureReason">Unknown user name or bad password.</Data>
+  </EventData>
+</Event>

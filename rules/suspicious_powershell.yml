@@ -1,0 +1,21 @@
+title: Suspicious PowerShell Execution
+id: dcb56c4b-e3b4-4a2d-8e13-1a5f33112345
+status: experimental
+description: Detects use of PowerShell with obfuscation or encoded commands
+author: Anas Nawaf
+logsource:
+  product: windows
+  service: sysmon
+detection:
+  selection:
+    EventID: 4688
+    Image|endswith: '\\powershell.exe'
+    CommandLine|contains:
+      - '-EncodedCommand'
+      - '-nop'
+      - '-w hidden'
+  condition: selection
+level: high
+tags:
+  - attack.execution
+  - attack.t1059.001
