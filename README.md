@@ -3,15 +3,6 @@
 ## Overview
 This lab simulates a realistic Windows-based cyber incident investigation. The analysis utilizes **Splunk** for log analysis and **Wireshark** for network traffic inspection. Additionally, Sigma rules are applied for threat detection.
 
-## Project Structure
-
-SOC-Investigation-Lab/
-├── data/ # Windows Security and Sysmon logs, plus network capture placeholder
-├── report/ # Incident report in PDF format
-├── rules/ # Sigma detection rule for suspicious PowerShell activity
-└── README.md # Project overview and instructions
-
-
 ## Contents
 - **`data/`**: Contains sample Windows Security and Sysmon logs, and a placeholder for network capture data.
 - **`rules/`**: Sigma rule designed to detect suspicious PowerShell executions indicative of attacks.
